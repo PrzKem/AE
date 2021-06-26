@@ -3,7 +3,6 @@
 
 State::State()
 {
-  func_to_exec = nullptr;
 }
 
 /*
@@ -23,21 +22,8 @@ int addFunc(void *newFunc)
         return -1;
 }
 
-void execFun()
+void update()
 {
-    func_to_exec;
-}
-
-//stany: a,b,c
-//przejscia: a->b, b->c, c->b
-
-class Transition()
-{
-private:
-    State prev;
-    State next;
-public:
-    Transition();
-    void addState(State, State);
-    
+    _acState = transition.giveState(_acState);
+    _acState.execFun();
 }
