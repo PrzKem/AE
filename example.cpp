@@ -1,3 +1,5 @@
+#include "State.h"
+
 void func(void* func_to_exec)
 {
   Serial.println("Func 1");
@@ -19,6 +21,11 @@ void func3()
 void main()
 {
   int i=0;
+  State stany[3];
+  state.addFunc(func2);
+  state[1].addFunc(func3);
+  state[2].addFunc(func2);
+
   if(i==1)
   {
     func(func2);
