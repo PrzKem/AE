@@ -11,7 +11,7 @@ private:
 public:
   State();
   int addFunc(void *);
-  void execFun();
+  void execFunc();
 }
 
 #endif
